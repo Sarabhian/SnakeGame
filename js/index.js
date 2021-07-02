@@ -67,7 +67,7 @@ function isCollide(snake){
     snakeArr[0].y +=snakePosition.y;
       
     // changing speed of snake 
-      speed= Math.round(snakeArr.length)*2;
+      speed= Math.round(snakeArr.length)*0.5;
     // Display snake 
     board.innerHTML = "";
     snakeArr.forEach((item,index)=>{
