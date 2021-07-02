@@ -45,6 +45,7 @@ function isCollide(snake){
         snakeArr=[{ x: 1, y: 17 }];
         musicSound.play();
         score=0;
+        speed=5;
     }
     // if food is eaten then increment score and regenerate food
     if (snakeArr[0].y===food.y && snakeArr[0].x===food.x){
@@ -64,6 +65,9 @@ function isCollide(snake){
     }
     snakeArr[0].x +=snakePosition.x;
     snakeArr[0].y +=snakePosition.y;
+      
+    // changing speed of snake 
+      speed= Math.round(snakeArr.length)*2;
     // Display snake 
     board.innerHTML = "";
     snakeArr.forEach((item,index)=>{
