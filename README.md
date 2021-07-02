@@ -8,3 +8,7 @@ you can dounload and play it 😅
 ## for playing game one can refer below link
 
 https://sarabhian.github.io/SnakeGame/
+
+```
+ use arrow keys to move snake and enjoy the game
+```
